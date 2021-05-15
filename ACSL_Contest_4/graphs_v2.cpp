@@ -15,20 +15,6 @@ string rtrim(const string &);
  *  2. STRING edges
  */
 
-void print_graph(unordered_map<char, unordered_set<char>> graph) {
-    for (auto x : graph) {
-        cout << x.first << " to ";
-        for (auto y : x.second) {
-            cout << y << " ";
-        }
-        cout << endl;
-    }
-}
-
-
-
-
-
 
 int arr_to_int(vector<char> arr, int n) {
     string num;
@@ -45,7 +31,6 @@ void get_path(unordered_map<char, unordered_set<char>> map, char v, vector<char>
     }
     if (len_of_path == num) {
         total += arr_to_int(path, num);
-        // cout << "Path: " << arr_to_int(path, num) << endl;
         return;
     }
     for (char i : map[v]) {
@@ -63,9 +48,6 @@ int sumPathsOfLengthN(int num, string edges) {
         graph[edges[i]].insert(edges[i+1]);
         total_nodes = max(total_nodes, max(edges[i]-'0', edges[i+1]-'0'));
     }
-    // print_graph(graph);
-    // int total_nodes = graph.size();
-    // cout << "Total Nodes: " << total_nodes << '\n';
     for (int i = 1; i <= total_nodes; i++) {
         vector<char> empty_path; empty_path.push_back('0'+i);
         get_path(graph, '0'+i, empty_path, 1, num);
@@ -78,8 +60,6 @@ int sumPathsOfLengthN(int num, string edges) {
 
 int main()
 {
-    // ofstream fout(getenv("OUTPUT_PATH"));
-
     string num_temp;
     getline(cin, num_temp);
 
@@ -92,7 +72,6 @@ int main()
 
     cout << result << "\n";
 
-    // fout.close();
 
     return 0;
 }
