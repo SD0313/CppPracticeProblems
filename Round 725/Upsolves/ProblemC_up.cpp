@@ -14,7 +14,6 @@ int main() {
     while (t--) {
         int n, l, r;
         cin >> n >> l >> r;
-        // cout << n << l << r << endl;
         vi arr(n);
         for (int& a : arr) {
             cin >> a;
