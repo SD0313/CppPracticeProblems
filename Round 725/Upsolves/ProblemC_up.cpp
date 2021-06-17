@@ -7,10 +7,8 @@ using ll = long long;
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 
-
-
 int main() {
-    // fastio;
+    fastio;
     int t;
     cin >> t;
     while (t--) {
@@ -21,7 +19,6 @@ int main() {
         for (int& a : arr) {
             cin >> a;
         }
-        // cout << arr[0] << ", " << arr[n-1] << endl;
         sort(arr.begin(), arr.end());
         // PRINT(arr);
         ll total = 0;
