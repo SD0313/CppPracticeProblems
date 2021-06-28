@@ -12,7 +12,15 @@ using vl = vector<ll>;
 #define lcm(a, b) a*b/gcd(a, b)
 
 int main() {
+    fastio;
+    int t; cin >> t;
+    while (t--) {
+        int n; cin >> n;
 
+
+
+
+    }
 
     
     return 0;
