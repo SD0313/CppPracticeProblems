@@ -12,7 +12,7 @@ using vl = vector<ll>;
 #define lcm(a, b) a*b/gcd(a, b)
 
 int main() {
-
+    
 
     
     return 0;
