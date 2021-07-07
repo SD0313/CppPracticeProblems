@@ -5,6 +5,7 @@ using ll = long long;
 using vl = vector<ll>;
 #define pb push_back
 #define str to_string
+#define char_to_int(c) c-'0'
 #define mp make_pair
 #define PRINT(vec) for (auto i : vec) {cout << i << " ";} cout << "\n"
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
